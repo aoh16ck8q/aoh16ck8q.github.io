@@ -35,11 +35,13 @@ hr {
 .navbar-btn {
   padding-top: 13px;
   margin: 0 10px 0 0;
-  color: #9d9d9d;
+  color: #ffffff;
   font-size: 18px;
+  font-family: Kristen ITC;
 }
 .navbar-btn:hover {
-  color: #ff0000;
+  color: #f2e0b3;
+  font-family: Kristen ITC;
 }
 
 .navbar {
@@ -71,7 +73,7 @@ hr {
 }
 /* 放照片 */
 .parallaxTop {
-  background-image: url("123.jpeg");
+  background-image: url("4.jpeg");
   min-height: 100vh;
 }
 
@@ -106,13 +108,74 @@ hr {
 }
 
 #aboutBlock {
-  width: 94%;
+  width: 100%;  
+}
+.aboutRight {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+     padding: 20px;
+    height:400px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3)),url('故事的背景.jpg');
+     background-position: center top 10px;
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+}
+
+.aboutRight h2 {
+  color: rgb(194, 143, 86);
+  font-weight: bold;
+  font-family: Kristen ITC;
+  font-size: 40px;
+  letter-spacing: 4px;
+  padding: 15px;
+}
+
+.aboutRight p {
+    color: black; /* 設定字型顏色為黑色 */
+    font-size: 16px; /* 設定字型大小為16px */
+}
+
+.aboutLeft {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+     padding: 0px;
+    height:400px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3)),url('video背景.jfif');
+     background-position: center top 0px;
+    background-size: cover;
+    
+    background-repeat: no-repeat;
 }
 
 #aboutRow, .aboutLeft, .aboutRight, .aboutImg {
-  min-height: 400px;
-  margin: 20px auto;
+  min-height: 0px;
+  margin: 0px auto;
 }
+
+#aboutImg video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+#aboutImg iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
 #aboutRow hr, .aboutLeft hr, .aboutRight hr, .aboutImg hr {
   margin-left: 0;
   text-align: left;
@@ -122,139 +185,103 @@ hr {
   background-repeat: no-repeat;
   background-size: 90% 90%;
 }
-
 #servicesRow {
-  background-image: url("https://images.pexels.com/photos/247932/pexels-photo-247932.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+  background-image: url("8a.jpg");
+}
+#servicesRow h2{
+ 
   text-align: center;
-  color: white;
+  color: rgb(194, 143, 86);
+  font-weight: bold;
+  font-family: Kristen ITC;
+  font-size: 80px;
+  letter-spacing: 4px;
+  padding: 15px;
+  margin-top: 10px;
 }
 #servicesRow h2 {
   padding-top: 100px;
 }
 
 #serviceBlocks .container {
-  width: 94%;
+  width: 98.5%;
 }
+
 
 .serviceBlock {
   text-align: center;
-  margin: 20px auto 50px auto;
-  padding: 25px;
-}
-.serviceBlock img {
-  width: 100px;
-  height: 100px;
   margin: 10px 0 20px 0;
+}
+
+
+.serviceBlock img {
+  width: 300px;
+  height: 300px;
+  
 }
 .serviceBlock p {
   font-size: 18px;
 }
 
-.phoneContact {
-  background: #ff0000;
-  text-align: center;
-  color: white;
-  min-height: 200px;
-}
-.phoneContact h2 {
-  margin: 100px 0;
-}
-
-#formMessage {
-  margin-bottom: 2%;
-  height: 100px;
-  max-width: 100%;
+.image-slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #f0f0f0;
+  overflow: hidden;
+  min-height: 300px;
+  height: 500px;
 }
 
-.contactForm {
-  margin: 50px auto;
-  text-align: center;
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
 }
-.contactForm h2 {
+
+.current-image {
+  max-width: 80%;
+  height: auto;
+  display: block;
   margin: 0 auto;
 }
-.contactForm form {
-  width: 75%;
-  margin: 50px auto 0 auto;
-}
-.contactForm form input {
-  margin-bottom: 2%;
-}
-.contactForm form input[name=name] {
-  margin-right: 2%;
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
 }
 
-#contactInfo {
-  background: #131413;
-  min-height: 200px;
-}
-#contactInfo .contactStack {
-  margin: 50px 0;
-  text-align: center;
-  font-size: 16px;
-}
-#contactInfo h4 {
-  color: #ff0000;
-}
-#contactInfo p {
-  color: #9d9d9d;
-}
-
-#copyright {
-  background: #ff0000;
-  min-height: 125px;
-  text-align: center;
-  color: white;
-}
-#copyright #facebook {
-  background-image: url("http://www.iconarchive.com/download/i54037/danleech/simple/facebook.ico");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-#copyright #twitter {
-  background-image: url("http://www.freeiconspng.com/uploads/twitter-icon-twitter-icon-7.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-#copyright #linkedin {
-  background-image: url("https://pbs.twimg.com/profile_images/614583061448036352/CBpFkPaz.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-#copyright .social, #copyright img {
-  height: 50px;
-  width: 50px;
+.prev-button,
+.next-button {
+  padding: 5px 10px;
+  background-color: #ccc;
   border: none;
-  margin: 30px 5px 0px 5px;
-}
-#copyright p {
-  margin: 30px 0;
+  cursor: pointer;
+  font-size: 20px;
 }
 
-@media screen and (max-width: 766px) {
-  .jumboBanner .banner {
-    font-size: 72px;
-  }
-
-  .cloak {
-    display: none;
-  }
+.fa-play {
+  font-size: inherit;
 }
-@media screen and (max-width: 500px) {
-  .inputInline {
-    width: 100%;
-    float: none;
-  }
 
-  form input {
-    margin-bottom: 5%;
-  }
-
-  input[name=submit] {
-    width: 100%;
-  }
-
-  input[name=name] {
-    margin-right: 0%;
-  }
+.background-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-image: url("背景圖片.jpg");
+  background-size: cover;
+  opacity: 0.5;
+  z-index: -1;
 }
+
+/* 剩余的样式保持不变 */
+
